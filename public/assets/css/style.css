@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed !important;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  background-color: #f05e16;
+  transition: background-color 0.9s ease;
+}
+.navbar.hidden{
+  background-color: #fff;
+  opacity: 0.5;
+  top: -100px;
+}
+.navbar .container .collapse ul li a:hover{
+  border-bottom: 2px solid white;
+}
+.banner-container{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.banner{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../image/banner.jpg');
+  background-size: cover;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+}
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  text-align: center;
+}
+.dropdown .btn{
+  border: 1px solid gray;
+  width: 150px;
+  border-radius: 20px;
+}
+.card{
+  width: 300px;
+  box-shadow: -10px 13px 24px 0px rgba(135,133,133,0.38);
+  -webkit-box-shadow: -10px 13px 24px 0px rgba(135,133,133,0.38);
+  -moz-box-shadow: -10px 13px 24px 0px rgba(135,133,133,0.38);
+}
+.card .card-body .card-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:3 ;
+    max-width: 20ch;
+}
+.card-img-top{
+    width: 300px;
+}
